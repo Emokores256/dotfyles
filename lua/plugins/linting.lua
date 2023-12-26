@@ -10,8 +10,8 @@ return {
 			--[[ typescript = { "eslint_d" }, ]]
 			javascriptreact = { "eslint_d" },
 			--[[ typescriptreact = { "eslint_d" }, ]]
-			php = { "phpcs" },
-			html = { "htmlhint" },
+			-- php = { "phpcs" },
+			-- html = { "htmlhint" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
