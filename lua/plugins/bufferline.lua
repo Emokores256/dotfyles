@@ -5,7 +5,7 @@ return {
 	config = function()
 		local opts = { silent = true, noremap = true }
 
-		vim.keymap.set({ "n", "v" }, "<leader>x", ":bd<CR>", opts)
+		vim.keymap.set({ "n", "v" }, "<leader>x", ":bd<CR>", { desc = "Closes a current open buffer" }, opts)
 		vim.keymap.set("n", "<tab>", ":BufferLineCycleNext<CR>", opts)
 		vim.keymap.set("n", "<S-tab>", ":BufferLineCyclePrev<CR>", opts)
 		vim.opt.termguicolors = true
