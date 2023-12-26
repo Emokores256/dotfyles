@@ -5,7 +5,6 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 vim.cmd("set relativenumber")
 vim.g.mapleader = " "
--- vim.cmd.colorscheme("material")
 
 --keymaps
 local keymap = vim.keymap
@@ -24,8 +23,8 @@ keymap.set({ "n", "v" }, "<leader>x", ":bd<CR>", { desc = "Closes a current open
 keymap.set("n", "<s-tab>", ":tabprev<CR>", opts)
 
 --split window
-keymap.set("n", "<leader>h", ":split", opts, { desc = "Splits a window horizontally" })
-keymap.set("n", "<leader>v", ":vsplit", opts, { desc = "Splits a window vertically" })
+keymap.set("n", "<leader>h", ":split", { desc = "Splits a window horizontally" }, opts)
+keymap.set("n", "<leader>v", ":vsplit", { desc = "Splits a window vertically" }, opts)
 
 --move window
 keymap.set("n", "<S-left>", "<C-w>h")

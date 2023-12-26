@@ -21,6 +21,7 @@ return {
 					},
 					opts = {
 						skip = true,
+						presets = { inc_rename = true },
 					},
 				})
 				opts.presets.lsp_doc_border = true
