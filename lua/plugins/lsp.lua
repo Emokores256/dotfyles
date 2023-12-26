@@ -24,6 +24,7 @@ return {
 					"htmlhint", -- html linter
 					"php-cs-fixer", -- php formatter
 					"phpcs", -- php linter
+					"markdownlint", -- markdown linter
 					"cspell", -- code speller (linter)
 					"blade-formatter", -- formatter for blade files
 					"js-debug-adapter", -- debugging for javsacript
