@@ -20,6 +20,7 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 -- new tab
 keymap.set("n", "te", "tabedit", opts)
 keymap.set("n", "<tab>", ":tabnext<CR>", opts)
+keymap.set({ "n", "v" }, "<leader>x", ":bd<CR>", { desc = "Closes a current open buffer" }, opts)
 keymap.set("n", "<s-tab>", ":tabprev<CR>", opts)
 
 --split window
