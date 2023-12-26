@@ -33,7 +33,16 @@ return {
 			})
 
 			require("mason-lspconfig").setup({
-				ensure_installed = { "tsserver", "lua_ls", "intelephense", "html", "cssls", "tailwindcss", "emmet_ls" },
+				ensure_installed = {
+					"tsserver",
+					"lua_ls",
+					"jsonls",
+					"intelephense",
+					"html",
+					"cssls",
+					"tailwindcss",
+					"emmet_ls",
+				},
 				automatic_installation = true,
 			})
 		end,
@@ -112,7 +121,7 @@ return {
 
 			local lspconfig = require("lspconfig")
 
-			local servers = { "html", "cssls", "intelephense", "emmet_ls", "tailwindcss", "tsserver" }
+			local servers = { "html", "cssls", "intelephense", "emmet_ls", "tailwindcss", "tsserver", "jsonls" }
 
 			for _, lsp in ipairs(servers) do
 				lspconfig[lsp].setup({
@@ -144,6 +153,8 @@ return {
 			lspconfig.cssls.setup({})
 
 			lspconfig.tailwindcss.setup({})
+
+			lspconfig.jsonls.setup({})
 
 			lspconfig.emmet_ls.setup({
 				filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "blade" },
