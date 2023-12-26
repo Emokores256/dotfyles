@@ -17,8 +17,14 @@ return {
 		vim.fn.sign_define("DiagnosticSignHint", { text = "󰌵", texthl = "DiagnosticSignHint" })
 
 		--keymaps
-		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal float<CR>", opts)
-		vim.keymap.set("n", "<S-n>", ":Neotree float git_status<CR>", opts)
+		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal float<CR>", { desc = "Opens the file explorer" }, opts)
+		vim.keymap.set(
+			"n",
+			"<S-n>",
+			":Neotree float git_status<CR>",
+			{ desc = "Shows the file git status from the explorer" },
+			opts
+		)
 
 		require("neo-tree").setup({
 			git_status = {
