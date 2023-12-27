@@ -3,7 +3,8 @@ return {
 	cmd = "IncRename",
 	config = function()
 		require("inc_rename").setup({
-			vim.keymap.set("n", "<leader>rn", function()
+			--[[ input_buffer_type = "dressing", ]]
+			vim.keymap.set("n", "<leader>cr", function()
 				return ":IncRename " .. vim.fn.expand("<cword>")
 			end, { expr = true }),
 		})
