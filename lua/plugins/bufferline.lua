@@ -1,3 +1,5 @@
+-- Buffer and tab management
+
 return {
 	"akinsho/bufferline.nvim",
 	version = "*",

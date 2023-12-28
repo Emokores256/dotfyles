@@ -1,3 +1,5 @@
+-- Improve UI (notifications, input)
+
 return {
 	"folke/noice.nvim",
 	event = "VeryLazy",

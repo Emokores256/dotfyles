@@ -1,3 +1,5 @@
+-- Onedark theme
+
 return {
 	name = "Onedark",
 	"olimorris/onedarkpro.nvim",

@@ -1,3 +1,5 @@
+-- minimalist buffer management
+
 return {
 	"ThePrimeagen/harpoon",
 	event = "VeryLazy",
@@ -33,7 +35,7 @@ return {
 		end)
 		vim.keymap.set("n", "<C-s>", function()
 			harpoon:list():select(4)
-		end)
+		end) ]]
 
 		-- Toggle previous & next buffers stored within Harpoon list
 		vim.keymap.set("n", "<C-S-P>", function()
@@ -41,6 +43,6 @@ return {
 		end)
 		vim.keymap.set("n", "<C-S-N>", function()
 			harpoon:list():next()
-		end) ]]
+		end)
 	end,
 }

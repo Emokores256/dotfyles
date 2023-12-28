@@ -1,3 +1,5 @@
+-- Variable renaming under LSP
+
 return {
 	"smjonas/inc-rename.nvim",
 	config = function()

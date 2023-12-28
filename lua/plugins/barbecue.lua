@@ -1,3 +1,5 @@
+-- VS Code-like file and function mapping
+
 return {
 	"utilyre/barbecue.nvim",
 	name = "barbecue",

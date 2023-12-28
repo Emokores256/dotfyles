@@ -1,3 +1,5 @@
+-- Official material theme
+
 return {
 	"marko-cerovac/material.nvim",
 	config = function()
