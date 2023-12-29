@@ -31,6 +31,7 @@ return {
               -- on later version, use vim.lsp.buf.format({async = false})
               -- vim.lsp.buf.formatting_sync()
               vim.lsp.buf.format({ async = false })
+              -- async_formatting = bufnr -- can be an alternative to the above line
             end,
           })
         end
