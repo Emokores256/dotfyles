@@ -24,11 +24,12 @@ return {
 					"stylua", -- lua formatter
 					"eslint_d", -- js linter
 					"htmlhint", -- html linter
-					"php-cs-fixer", -- php formatter
+					"pint", -- php formatter for laravel/php
+          -- "php-cs-fixer", -- php formatter
 					-- "phpcs", -- php linter
 					"markdownlint", -- markdown linter
 					"cspell", -- code speller (linter)
-					"blade-formatter", -- formatter for blade files
+					-- "blade-formatter", -- formatter for blade files
 					"js-debug-adapter", -- debugging for javsacript
 					"php-debug-adapter", -- debugging for php
 				},
